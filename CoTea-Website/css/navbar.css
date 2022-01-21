@@ -1,0 +1,172 @@
+nav {
+    background-color: #fff;
+    height: 102px;
+    width: 100%;
+}
+
+img.logo {
+    margin-left: 37px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 102px;
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: #9DA1A3;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li a.res-link {
+    color: #B29E7F;
+    text-decoration: underline;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+.checkbtn {
+    font-size: 40px;
+    color: #05345F;
+    float: right;
+    line-height: 102px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1339px) {
+    nav img.logo {
+        margin-left: 10px;
+    }
+    nav ul {
+        margin-right: 30px;
+    }
+    nav ul li {
+        margin: 0 40px;
+    }
+    nav ul li a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1265px) {
+    nav ul {
+        margin-right: 20px;
+    }
+    nav ul li {
+        margin: 0 25px;
+    }
+    nav ul li a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1220px) {
+    nav img.logo {
+        margin-left: 50px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        top: 103px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 24px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 834px) {
+    img.logo {
+        height: 95px; 
+    }
+    nav {
+        height: 95px;
+    }
+    ul {
+        top: 96px;
+    }
+}
+
+@media (max-width: 570px) {
+    img.logo {
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 450px) {
+    img.logo {
+        height: 75px;
+        margin-left: 25px; 
+    }
+    nav {
+        height: 75px;
+    }
+    ul {
+        top: 76px;
+    }
+    .checkbtn {
+        font-size: 35px;
+        line-height: 83px;
+    }
+}
+
+@media (max-width: 414px) {
+    img.logo {
+        margin-top: 3px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    nav {
+        padding: 20px 5px;
+    }
+    img.logo {
+        height: 60px;
+    }
+    nav {
+        height: 60px;
+    }
+    ul {
+        top: 66px;
+    }
+    .checkbtn {
+        line-height: 65px;
+        margin-right: 30px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}

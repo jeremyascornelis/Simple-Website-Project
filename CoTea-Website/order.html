@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoTea</title>
+    <link rel="shortcut icon" href="assets/images/coTea-icon.png">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="js/order.js" async></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="assets/images/iconLogo.png"class="logo"></a>
+        <!--CART-->
+        <div id="cart-info" class="nav-info cart-info">
+            <span class="cart-info__icon"><i class="fas fa-shopping-cart"></i></span>
+            <p><span id="item-count">0</span></p>
+        </div>
+        <section class="cart" id="cart">
+            <h1 class="section-header">Cart</h1>
+            <br>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Item</span>
+                <span class="cart-price cart-header cart-column">Price</span>
+                <span class="cart-quantity cart-header cart-column">Quantity</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rp 0</span>
+            </div>
+    
+            <button id="btn-purchase"class="btn btn-primary btn-purchase" type="button">Purchase</button>
+        </section>
+    </nav>
+    <center><h1>Our Delicious Menu</h1>
+        <br>
+        <h2>Click <i class="fas fa-shopping-cart"></i> on the top right to see the total purchase</h2>
+        <br>
+        <div id="filterButtons">
+            <button class="btn active" onclick="filterSelection('all')">All</button>
+            <button class="btn" onclick="filterSelection('Coffee')">Coffee</button>
+            <button class="btn" onclick="filterSelection('Tea')">Tea</button>
+            <button class="btn" onclick="filterSelection('Desserts')">Desserts</button>
+        </div>
+    </center>
+    <br><br>
+    <section class="container">
+        <div class="products">
+    
+            <div class="product Coffee">
+                <img src="assets/images/coffee1.png" class="product_image">
+                <h2 class="product-title">Hot Cappucino</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 13500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+    
+            <div class="product Tea">
+                <img src="assets/images/tea1.png" class="product_image">
+                <h2 class="product-title">Ice HoneyTea</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 13500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Desserts">
+                <img src="assets/images/dessert1.png" class="product_image">
+                <h2 class="product-title">WafStro</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 12000</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <div class="product Coffee">
+                <img src="assets/images/coffee2.png" class="product_image">
+                <h2 class="product-title">Hot BlackCof</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 11500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <!--Row 2-->
+            <div class="product Tea">
+                <img src="assets/images/tea2.png" class="product_image">
+                <h2 class="product-title">Ice LemonTea</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 9500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Desserts">
+                <img src="assets/images/dessert2.png" class="product_image">
+                <h2 class="product-title">Vanilla Pie</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 11500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Coffee">
+                <img src="assets/images/coffee3.png" class="product_image">
+                <h2 class="product-title">Ice American</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 10500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <div class="product Tea">
+                <img src="assets/images/tea3.png" class="product_image">
+                <h2 class="product-title">Hot HerbTea</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 12000</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <!--Row 3-->
+            <div class="product Desserts">
+                <img src="assets/images/dessert3.png" class="product_image">
+                <h2 class="product-title">BRasp Pie</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 8500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Coffee">
+                <img src="assets/images/coffee4.png" class="product_image">
+                <h2 class="product-title">Ice Macchi'to</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 16000</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Tea">
+                <img src="assets/images/tea4.png" class="product_image">
+                <h2 class="product-title">Ice MilkTea</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 10500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <div class="product Desserts">
+                <img src="assets/images/dessert4.png" class="product_image">
+                <h2 class="product-title">StroPancake</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 15000</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <!--Row 4-->
+            <div class="product Coffee">
+                <img src="assets/images/coffee5.png" class="product_image">
+                <h2 class="product-title">Hot Latte</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 13500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Tea">
+                <img src="assets/images/tea5.png" class="product_image">
+                <h2 class="product-title">Ice BubTea</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 15000</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Desserts">
+                <img src="assets/images/dessert5.png" class="product_image">
+                <h2 class="product-title">Rasp C'cake</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 9800</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <div class="product Coffee">
+                <img src="assets/images/coffee6.png" class="product_image">
+                <h2 class="product-title">Ice Mocha</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 14500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <!--Row 5-->
+            <div class="product Tea">
+                <img src="assets/images/tea6.png" class="product_image">
+                <h2 class="product-title">Hot ChinTea</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 12500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Desserts">
+                <img src="assets/images/dessert6.png" class="product_image">
+                <h2 class="product-title">Blue Donut</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 7000</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+    
+            <div class="product Desserts">
+                <img src="assets/images/dessert7.png" class="product_image">
+                <h2 class="product-title">Choco C'cake</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 8800</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+
+            <div class="product Desserts">
+                <img src="assets/images/dessert8.png" class="product_image">
+                <h2 class="product-title">TriCho Cake</h2>
+                <div class="shop-item-details">
+                    <h3 class="product__price">Rp 10500</h3>
+                    <center><button class="btn btn--primary ADD-TO-CART">Add to Cart</button></center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="js/filter.js">
+        
+    </script>
+</body>
+</html>
