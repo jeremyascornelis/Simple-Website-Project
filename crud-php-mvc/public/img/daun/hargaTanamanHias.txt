@@ -1,0 +1,17 @@
+aglonemaSuksom:35000
+aglonemaRotundumAceh:30000
+aglonemaRoDudAnjamani:65000
+aglonemaVenus:65000
+aglonemaSuperWhite:90000
+aglonemaRedChocin:80000
+aglonemaRedMajesty:75000
+aglonemaAyunindi:35000
+aglonemaRedAnjamaniDewasa:80000
+aglonemaSnowWhiteRemaja:27500
+aglonemaKhocin:60000
+aglonemaBigroy:60000
+
+
+
+
+
